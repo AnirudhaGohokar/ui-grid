@@ -380,7 +380,7 @@
               }
 
               if (!angular.isNumber(options.paginationCurrentPage) || options.paginationCurrentPage < 1) {
-                options.paginationCurrentPage = 1;
+                options.paginationCurrentPage = $scope.paginationApi.getTotalPages();
                 return;
               }
 
